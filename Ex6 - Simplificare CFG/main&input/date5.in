@@ -1,0 +1,49 @@
+#
+# comment lines ( skip them )
+
+
+#
+Start:
+	S
+End
+
+
+
+#
+# comment lines ( skip them )
+#
+Epsilon:
+	0
+End
+#
+# comment lines ( skip them )
+#
+Terminals:
+	a
+	b
+	c
+
+End
+
+#
+# comment lines ( skip them )
+#
+Nonterminals:
+	A
+	B
+	C
+	D
+
+End
+#
+# comment lines ( skip them )
+#
+
+Productions:
+    S aA|bB|C
+    A aS|ac
+    B b|A
+    C abC|0
+    D bD
+
+End

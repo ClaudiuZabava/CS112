@@ -1,0 +1,20 @@
+CFG-ul initial:
+
+Start: S
+Terminals: a b c 
+Nonterminals: A B C D
+
+
+S->aA|bB|C
+A->aS|ac
+B->b|A
+C->abC|0
+D->bD
+
+Rezultat dupa simplificare:
+
+S->aA|bB|abC|ab
+A->aS|ac
+B->b|aS|ac
+C->abC|ab
+
